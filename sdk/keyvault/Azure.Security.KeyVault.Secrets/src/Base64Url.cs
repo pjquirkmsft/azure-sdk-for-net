@@ -12,7 +12,6 @@ namespace Azure.Security.KeyVault.Secrets
         public static byte[] Decode(string str)
         {
             str = new StringBuilder(str).Replace('-', '+').Replace('_', '/').Append('=', (str.Length % 4 == 0) ? 0 : 4 - (str.Length % 4)).ToString();
-
             return Convert.FromBase64String(str);
         }
 
