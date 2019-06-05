@@ -16,6 +16,8 @@ pr:
   paths:
     include:
     - sdk/appconfiguration/
+    
+pool: Default
 
 steps:
 - script: echo 'hello world'
