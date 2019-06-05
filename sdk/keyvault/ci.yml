@@ -17,5 +17,7 @@ pr:
     include:
     - sdk/keyvault/
 
+pool: Default
+
 steps:
 - script: echo 'hello world'
